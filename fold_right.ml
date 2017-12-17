@@ -17,6 +17,10 @@ let rec sum lst =
   let rec add_int first rest_result = first + rest_result
   in fold_right add_int lst 0
 
+(* prefix関数 - 関数を先頭に置き, 引数をその後に並べる記法 (+) a b = a + b
+  let rec sum lst = fold_right (+) lst 0
+*)
+
 (* テスト *)
 (*
   let test0 = sum [] = 0

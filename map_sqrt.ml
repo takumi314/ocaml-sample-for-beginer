@@ -1,0 +1,11 @@
+(* 目的: 実数のリストt lst を受け取り各要素の平方根のリストを返す *)
+(* map_sqrt : float list -> float -> list *)
+let rec map_sqrt lst = match lst with
+    [] -> []
+  | first :: rest -> sqrt first :: map_sqrt rest
+
+(* テスト *)
+let test1 = map_sqrt [] = []
+let test2 = map_sqrt [1] = [1]
+let test3 = map_sqrt [4.0] = [2]
+let test4 = map_sqrt [4.0; 9.0] = [2.0; 3.0]

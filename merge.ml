@@ -9,10 +9,6 @@ let rec merge lst1 lst2 = match (lst1, lst2) with
     then first1 :: merge rest1 lst2
     else first2 :: merge lst1 rest2
 
-
-
-
-
 (* テスト *)
 let test1 = merge [] [] = []
 let test2 = merge [] [1; 2] = [1; 2]

@@ -8,8 +8,10 @@
 (* sum : int list -> int *)
 let rec min lst = match lst with
     [] -> max_int
-  | first :: rest -> let minimum = min rest in if first <= minimum then first
-                                          else minimum
+  | first :: rest 
+    -> let minimum = min rest
+    in if first <= minimum then first
+                           else minimum
 
 (* テスト *)
 let test1 = min [3] = 3

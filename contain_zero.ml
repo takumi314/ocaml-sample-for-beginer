@@ -1,7 +1,9 @@
-(* int list は
+(*
+  int list は
     - []              空リスト
     - first :: rest   最初の要素が first で残りのリストが rest
-   という形 *)
+  という形
+*)
 
 (* 目的 : 受け取ったリスト lst に 0 が含まれているか調べる *)
 (* contain_zero : int list -> bool *)

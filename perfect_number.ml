@@ -31,8 +31,8 @@ let test8 = divisor 12 = [12; 6; 4; 3; 2; 1]
 
 (* 目的 : n 以下の完全数のリストを返す *)
 (* perfect_number : int -> int list *)
-let perfect_number n =
-  filter (fun n -> fold_right (+) (divisor n) 0 - n = n) (enumerate n)
+let perfect_number m =
+  filter (fun n -> fold_right (+) (divisor n) 0 - n = n) (enumerate m)
 
 (* テスト *)
 let test9 = perfect_number 0 = []
